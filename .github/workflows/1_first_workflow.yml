@@ -22,7 +22,7 @@ jobs:
   first_calculation:
     uses: ./.github/workflows/1_first_launch_workflow.yml
     with:
-      environment: ${{ inouts.environment }}
+      environment: ${{ inputs.environment }}
       space: ${{ inputs.space }}
 
 
