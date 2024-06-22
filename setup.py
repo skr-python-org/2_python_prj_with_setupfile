@@ -1,11 +1,11 @@
-import os
+#import os
 import pathlib
-import subprocess
-import sys
+#import subprocess
+#import sys
 import setuptools
 
-def install(package):
-    subprocess.check_call([sys.excutable,"-m","pip","install",package])
+#def install(package):
+#    subprocess.check_call([sys.excutable,"-m","pip","install",package])
 
 # GH_TOKEN = os.getenv("GH_TOKEN")
 # if GH_TOKEN is None:
