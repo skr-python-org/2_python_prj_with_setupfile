@@ -26,7 +26,7 @@ PACKAGE_REQUIREMENTS = [
     "pysftp==0.2.9",
     "boto3==1.34.51",
     "wheel",
-    f"python_initial_proj @ git+https://{GH_TOKEN}@github.com/skr-python-org/1_python_initial_proj.git@main"
+    f"python_generic_func_library @ git+https://{GH_TOKEN}@github.com/skr-python-org/python_generic_func_library.git@main"
 
 ]
 
