@@ -42,7 +42,7 @@ jobs:
           pytest me/personal --cov
       - name: List environment Variables
         run: |
-          python ./me/personal/run_env_vars.py
+          python ./me/personal/perform_calc/run_env_vars.py
   run:
     needs: build
     environment: ${{ inputs.environment }}
