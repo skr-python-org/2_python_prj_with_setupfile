@@ -42,8 +42,7 @@ jobs:
           pytest me/personal --cov
       - name: List environment Variables
         run: |
-          import os
-          print(os.environ)
+          python ./me/personal/run_env_vars.py
   run:
     needs: build
     environment: ${{ inputs.environment }}
