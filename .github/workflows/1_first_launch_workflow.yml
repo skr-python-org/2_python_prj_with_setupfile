@@ -61,7 +61,7 @@ jobs:
           pip install -e ".[dev]"
       - name: runcode
         run: |
-          python ./me/personal/perform_calc/scripts/run_code.py
+          python ./me/personal/perform_calc/run_code.py
           
 
 
