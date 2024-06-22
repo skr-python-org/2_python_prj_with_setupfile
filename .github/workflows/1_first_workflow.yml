@@ -1,0 +1,31 @@
+name: 1_First Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        type: choice
+        options:
+          - dev
+          - test
+          - prod
+        description: enter environment value
+      space:
+        type: choice
+        options:
+          - release
+          - synthetic
+          - feature
+        description: enter space value
+
+jobs:
+  first_calculation:
+    uses: ./.github/workflows/1_first_launch_workflow.yml
+    with:
+      environment: ${{ inouts.environment }}
+      space: ${{ inputs.space }}
+
+
+
+
+
