@@ -42,6 +42,7 @@ jobs:
           pytest me/personal --cov
       - name: List environment Variables
         run: |
+          import os
           print(os.environ)
   run:
     needs: build
