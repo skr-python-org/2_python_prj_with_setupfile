@@ -40,6 +40,9 @@ jobs:
       - name: Run Unit tests
         run: |
           pytest me/personal --cov
+      - name: List environment Variables
+        run: |
+          print(os.environ)
   run:
     needs: build
     environment: ${{ inputs.environment }}
