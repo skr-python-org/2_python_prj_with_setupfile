@@ -7,15 +7,15 @@ import setuptools
 def install(package):
     subprocess.check_call([sys.excutable,"-m","pip","install",package])
 
-GH_TOKEN = os.getenv("GH_TOKEN")
-if GH_TOKEN is None:
-    required = 'python-dotenv==1.0.0'
-    install(required)
-    from dotenv import load_dotenv
-
-    load_dotenv()
-    GH_TOKEN = os.getenv("GH_USERNAME")+ ":" +os.getenv("GH_TOKEN")
-    print(f"##### GH_TOKEN is :::: {GH_TOKEN}")
+# GH_TOKEN = os.getenv("GH_TOKEN")
+# if GH_TOKEN is None:
+#     required = 'python-dotenv==1.0.0'
+#     install(required)
+#     from dotenv import load_dotenv
+#
+#     load_dotenv()
+#     GH_TOKEN = os.getenv("GH_USERNAME")+ ":" +os.getenv("GH_TOKEN")
+#     print(f"##### GH_TOKEN is :::: {GH_TOKEN}")
 
 
 PACKAGE_REQUIREMENTS = [
