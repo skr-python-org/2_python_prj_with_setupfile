@@ -21,7 +21,8 @@ import setuptools
 PACKAGE_REQUIREMENTS = [
     "PyYAML==6.0",
     "pysftp==0.2.9",
-    "boto3==1.34.51"
+    "boto3==1.34.51",
+    "wheel"
 ]
 
 DEV_REQUIREMENTS = [
