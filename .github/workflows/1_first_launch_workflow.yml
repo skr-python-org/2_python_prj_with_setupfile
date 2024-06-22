@@ -21,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       env_var_a : "abc"
+      GH_USERNAME: ${{ secrets.GH_USERNAME }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -52,6 +54,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       env_var_b : "def"
+      GH_USERNAME: ${{ secrets.GH_USERNAME }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
       - name: checkout repository
         uses: actions/checkout@v3

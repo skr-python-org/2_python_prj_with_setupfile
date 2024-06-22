@@ -1,4 +1,4 @@
-#import os
+import os
 import pathlib
 #import subprocess
 #import sys
@@ -17,12 +17,17 @@ import setuptools
 #     GH_TOKEN = os.getenv("GH_USERNAME")+ ":" +os.getenv("GH_TOKEN")
 #     print(f"##### GH_TOKEN is :::: {GH_TOKEN}")
 
+GH_USERNAME = os.getenv("GH_USERNAME")
+GH_TOKEN = os.getenv("GH_TOKEN")
+
 
 PACKAGE_REQUIREMENTS = [
     "PyYAML==6.0",
     "pysftp==0.2.9",
     "boto3==1.34.51",
-    "wheel"
+    "wheel",
+    f"1_python_initial_proj @ git+https://{GH_TOKEN}@github.com/skr-python-org/1_python_initial_proj.get@v1.0.0"
+
 ]
 
 DEV_REQUIREMENTS = [
