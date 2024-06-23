@@ -24,6 +24,7 @@ jobs:
     with:
       environment: ${{ inputs.environment }}
       space: ${{ inputs.space }}
+    secrets: inherit
 
 
 
