@@ -19,9 +19,6 @@ import setuptools
 
 GH_USERNAME = os.getenv("GH_USERNAME")
 GH_TOKEN = os.getenv("GH_TOKEN")
-#GH_USER_WITH_TOKEN = GH_USERNAME +" : "+GH_USERNAME
-
-
 PACKAGE_REQUIREMENTS = [
     "PyYAML==6.0",
     "pysftp==0.2.9",
@@ -69,3 +66,6 @@ setuptools.setup(
 
 
 )
+#GH_USER_WITH_TOKEN = GH_USERNAME +" : "+GH_USERNAME
+
+
