@@ -19,6 +19,7 @@ import setuptools
 
 GH_USERNAME = os.getenv("GH_USERNAME")
 GH_TOKEN = os.getenv("GH_TOKEN")
+GH_USER_WITH_TOKEN = GH_USERNAME +" : "+GH_USERNAME
 
 
 PACKAGE_REQUIREMENTS = [
@@ -26,7 +27,7 @@ PACKAGE_REQUIREMENTS = [
     "pysftp==0.2.9",
     "boto3==1.34.51",
     "wheel",
-    f"python_generic_func_library @ git+https://{GH_TOKEN}@github.com/skr-python-org/python_generic_func_library.git@v1.0.0"
+    f"python_generic_func_library @ git+https://{GH_USER_WITH_TOKEN}@github.com/skr-python-org/python_generic_func_library.git@v1.0.0"
 
 ]
 
