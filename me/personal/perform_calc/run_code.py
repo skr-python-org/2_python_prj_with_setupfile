@@ -1,6 +1,6 @@
 
 import os
-from python_generic_func_library.generic.functs.math_functs import s_add , s_sub
+from python-generic-func-library.generic.functs.math_functs import s_add , s_sub
 
 def __main__():
     print("## from main method")
